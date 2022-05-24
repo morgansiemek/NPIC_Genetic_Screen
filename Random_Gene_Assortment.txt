@@ -1,0 +1,13 @@
+> knockouts <- read.csv(file = "~/Desktop/SCerevisiaeKnockoutCollection.csv")
+> vector<-knockouts$ORF_name
+> Set1 <- floor(runif(154,min=1,max=4826))
+> Set2 <- floor(runit(154,min=1,max=4826))
+> func1 <- function(gene, r){
++     vr <- c()
++     for(i in 1:length(r)){
++         vr[i] <- gene[r[i]]
++     }
++     return(vr)
++ }
+> set1_result <- func1(vector, Set1)
+> set2_result <- func1(vector, Set2)
